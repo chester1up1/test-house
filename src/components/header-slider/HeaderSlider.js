@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slide from "./containers/Slide";
 import ControlBtn from "./ControlBtn";
 import ModalItem from "../modal/ModalItem";
 import { Button } from "reactstrap";
-import header_slider_house1 from "../../img/header_slider_house1.svg";
-import header_slider_house2 from "../../img/header_slider_house2.svg";
+import header_bg_1 from "../../img/header_bg_1.jpg";
+import header_bg_2 from "../../img/header_bg_2.jpg";
 import header_logo_1 from "../../img/header_logo_1.svg";
 import header_logo_2 from "../../img/header_logo_2.svg";
 import phone from "../../img/phone.svg";
@@ -15,7 +15,7 @@ export default function HeaderSlider() {
   const [index, setIndex] = useState(0);
   const data = [
     {
-      src: header_slider_house1,
+      src: header_bg_1,
       logo: header_logo_1,
       header: "Жилой комплекс КЛАБ РЕЗИДЕНС",
       text: "Квартиры уже в продаже!",
@@ -24,7 +24,7 @@ export default function HeaderSlider() {
       id: 0,
     },
     {
-      src: header_slider_house2,
+      src: header_bg_1,
       logo: header_logo_2,
       header: "Жилой комплекс КЛУБНЫЙ ДОМ",
       text: "Это две строчки текста на семь слов",
@@ -33,7 +33,6 @@ export default function HeaderSlider() {
       id: 1,
     },
   ];
-
   const nextSlide = () => {
     if (index + 1 < data.length) {
       setIndex(index + 1);
@@ -82,7 +81,7 @@ export default function HeaderSlider() {
       <ul
         style={{
           transform:
-            index == 0 ? `translateX(0px)` : `translateX(-${index * 1200}px)`,
+            index === 0 ? `translateX(0px)` : `translateX(-${index * 1200}px)`,
         }}
       >
         {data.map((item) => (
