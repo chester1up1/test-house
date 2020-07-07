@@ -1,0 +1,165 @@
+.contacts_box {
+  min-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 140px;
+  padding-top: 137px;
+  .text_box {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 57px;
+    .title {
+      font-family: "Cormorant";
+      font-weight: 500;
+      font-size: 68px;
+      display: flex;
+      align-items: center;
+      color: #212224;
+      width: 210px;
+      line-height: 68px;
+      margin-right: 75px;
+    }
+    .text1 {
+      margin-right: 39px;
+      .street {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 70px;
+        color: #757575;
+        margin-bottom: 0px;
+      }
+      .name {
+        font-family: "Cormorant";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 5px;
+        color: #212224;
+        margin-top: -10px;
+        margin-bottom: 40px;
+      }
+      .open {
+        display: flex;
+
+        a {
+          text-decoration: none;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          color: #a68e52;
+          border-bottom: 1px solid #a68e52;
+          cursor: pointer;
+        }
+        a:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .text2 {
+      .phone_ {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 70px;
+        color: #757575;
+        margin-bottom: 0px;
+      }
+      .number_ {
+        font-family: "Cormorant";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 5px;
+        color: #212224;
+        margin-top: -10px;
+        margin-bottom: 33px;
+        .time {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: #757575;
+          margin-left: 18px;
+        }
+      }
+      .open {
+        display: flex;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #a68e52;
+        p {
+          border-bottom: 1px solid #a68e52;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .map {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    .send {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 119px;
+      img {
+        margin-right: 23px;
+        cursor: pointer;
+      }
+      a {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #a68e52;
+        margin-bottom: 0px;
+        cursor: pointer;
+        border-bottom: 1px solid #a68e52;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    .map_box {
+      position: relative;
+      .op {
+        position: absolute;
+        top: 43px;
+        left: 273px;
+      }
+      .rez {
+        position: absolute;
+        top: 132px;
+        left: 318px;
+      }
+      .rec {
+        position: absolute;
+        top: 172.72px;
+        left: 356.04px;
+      }
+      .club {
+        position: absolute;
+        top: 192.24px;
+        left: 339px;
+      }
+    }
+  }
+}

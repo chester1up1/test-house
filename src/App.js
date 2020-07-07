@@ -4,6 +4,7 @@ import Gallery from "./components/gallery/Gallery";
 import Layout from "./components/layout/Layout";
 import ModalItem from "./components/modal/ModalItem";
 import Documents from "./components/documents/Documents";
+import Contacts from "./components/contacts/Contacts";
 import "./style.scss";
 
 function App() {
@@ -19,8 +20,8 @@ function App() {
         <Layout toggle={toggle} />
         <Documents />
       </div>
+      <Contacts toggle={toggle} />
       <ModalItem modal={modal} toggle={toggle} />
-
       <div style={{ width: 1280, height: 720, backgroundColor: "green" }} />
     </div>
   );
