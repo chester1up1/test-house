@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderSlider from "./components/header-slider/HeaderSlider";
 import Gallery from "./components/gallery/Gallery";
+import Layout from "./components/layout/Layout";
 import "./style.scss";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="app">
       <HeaderSlider />
       <Gallery />
+      <Layout />
       <div style={{ width: 1280, height: 720, backgroundColor: "green" }} />
     </div>
   );
