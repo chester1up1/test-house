@@ -1,0 +1,65 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+  height: 88px;
+  background: #212224;
+  padding-left: 45.93px;
+  padding-top: 16.62;
+  padding-right: 45px;
+  .street_ {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      margin-right: 20px;
+    }
+    p {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      margin-bottom: 0px;
+      color: #b3aeae;
+    }
+  }
+  .phone_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      margin-right: 20px;
+    }
+    p {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      margin-bottom: 0px;
+      color: #b3aeae;
+    }
+  }
+  .logo_sm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    p {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      letter-spacing: 0.05em;
+      color: #b2aeae;
+      margin-bottom: 0px;
+    }
+    .active {
+      border-bottom: 1px solid #a68e52;
+    }
+  }
+}
