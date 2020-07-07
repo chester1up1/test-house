@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Slide from "./containers/Slide";
 import ControlBtn from "./ControlBtn";
-import ModalItem from "../modal/ModalItem";
 import { Button } from "reactstrap";
 import header_bg_1 from "../../img/header_bg_1.jpg";
 import header_bg_2 from "../../img/header_bg_2.jpg";
@@ -11,7 +10,8 @@ import phone from "../../img/phone.svg";
 import bottom_logo from "../../img/bottom_logo.svg";
 import "./style.scss";
 
-export default function HeaderSlider() {
+export default function HeaderSlider(props) {
+  const { toggle } = props;
   const [index, setIndex] = useState(0);
   const data = [
     {
@@ -52,10 +52,6 @@ export default function HeaderSlider() {
   const toSlide = (id) => {
     setIndex(id);
   };
-
-  const [modal, setModal] = useState(false);
-
-  const toggle = () => setModal(!modal);
 
   return (
     <div className="header_slider" id={0}>
@@ -107,7 +103,6 @@ export default function HeaderSlider() {
       <div className="logo_down">
         <img src={bottom_logo} alt="bottom_logo" />
       </div>
-      <ModalItem modal={modal} toggle={toggle} />
     </div>
   );
 }
