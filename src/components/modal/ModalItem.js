@@ -32,6 +32,7 @@ const ModalItem = (props) => {
     <div>
       <Modal isOpen={modal} toggle={toggle}>
         <ModalBody className="modal_brd">
+          <div className="border_line" />
           <div className="form">
             <p className="header">Заказать звонок</p>
             <Input
