@@ -20,7 +20,7 @@ export default function Navigation() {
       <div
         className="navigation"
         style={{
-          opacity: scrollTop >= 0 && scrollTop < 620 ? 0 : 1,
+          display: scrollTop >= 0 && scrollTop < 620 ? "none" : "",
           transition: "0.4s",
         }}
       >
