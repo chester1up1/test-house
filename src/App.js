@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import HeaderSlider from "./components/header-slider/HeaderSlider";
+import Gallery from "./components/gallery/Gallery";
+import Layout from "./components/layout/Layout";
+import ModalItem from "./components/modal/ModalItem";
+import Documents from "./components/documents/Documents";
+import Contacts from "./components/contacts/Contacts";
+import Footer from "./components/footer/Footer";
+import Navigation from "./components/navigation/Navigation";
+import "./style.scss";
 
 function App() {
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <HeaderSlider toggle={toggle} />
+      <Gallery />
+      <div className="forest">
+        <Layout toggle={toggle} />
+        <Documents />
+      </div>
+      <Contacts toggle={toggle} />
+      <Footer />
+      <div className="nav_box">
+        <Navigation />
+      </div>
+      <ModalItem modal={modal} toggle={toggle} />
     </div>
   );
 }

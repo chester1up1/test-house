@@ -1,0 +1,13 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  .forest {
+    background-image: url("img/bg_forest.jpg");
+  }
+  .nav_box {
+    width: 1084px;
+    position: relative;
+  }
+}
