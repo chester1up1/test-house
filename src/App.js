@@ -6,6 +6,7 @@ import ModalItem from "./components/modal/ModalItem";
 import Documents from "./components/documents/Documents";
 import Contacts from "./components/contacts/Contacts";
 import Footer from "./components/footer/Footer";
+import Navigation from "./components/navigation/Navigation";
 import "./style.scss";
 
 function App() {
@@ -22,8 +23,11 @@ function App() {
         <Documents />
       </div>
       <Contacts toggle={toggle} />
-      <ModalItem modal={modal} toggle={toggle} />
       <Footer />
+      <div className="nav_box">
+        <Navigation />
+      </div>
+      <ModalItem modal={modal} toggle={toggle} />
     </div>
   );
 }
