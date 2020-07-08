@@ -16,7 +16,14 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop]);
   return (
-    <div className="abs">
+    <div
+      className="abs"
+      style={{
+        // display: scrollTop >= 0 && scrollTop < 620 ? "none" : "",
+        opacity: scrollTop >= 0 && scrollTop < 620 ? 0 : 1,
+        transition: "0.4s",
+      }}
+    >
       <div
         className="navigation"
         style={{
@@ -206,7 +213,12 @@ export default function Navigation() {
             </div>
           )}
         </ScrollTo>
-        <ControlBtn />
+        <ControlBtn
+          style={{
+            display: scrollTop >= 0 && scrollTop < 620 ? "none" : "",
+            transition: "0.4s",
+          }}
+        />
       </div>
     </div>
   );
