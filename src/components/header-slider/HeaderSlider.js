@@ -24,7 +24,7 @@ export default function HeaderSlider(props) {
       id: 0,
     },
     {
-      src: header_bg_1,
+      src: header_bg_2,
       logo: header_logo_2,
       header: "Жилой комплекс КЛУБНЫЙ ДОМ",
       text: "Это две строчки текста на семь слов",
